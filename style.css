@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+
+.container{
+    min-height: 100vh;
+}
+
+
+
+  /* ----- home page ---------- */
+
+
+#homePage.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#homePage #wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#homePage #wrap #buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#homePage #wrap #buttons button{
+    margin: 10px;
+}
+
+#homePage #doodle{
+    width: 272px;
+}
+
+#homePage #searchBox{
+    display: flex;
+    align-items: center;
+}
+
+#homePage #searchBox #search{
+    width: 580px;
+    height: 44px;
+    border-radius: 50px;
+    border: 1px solid darkgrey;
+}
+
+#homePage #searchIcon{
+    width: 100px;
+    width: 20px;
+
+    position: relative;
+    left: 35px;
+}
+
+
+#homePage #micIcon{
+    width: 100px;
+    width: 20px;
+
+    position: relative;
+    left: -35px;
+}
