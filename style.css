@@ -1,88 +1,156 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-.container{
-    min-height: 100vh;
+.container {
+  min-height: 100vh;
 }
 
+/* ----- home page ---------- */
 
-
-  /* ----- home page ---------- */
-
-
-#homePage.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#homePage.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#homePage #wrap{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#homePage #wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#homePage #doodle{
-    width: 272px;
-    /* height: 92px; */
+#homePage #doodle {
+  width: 272px;
+  /* height: 92px; */
 }
 
-#homePage #wrap #buttons{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+#homePage #wrap #buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
-#homePage #wrap #buttons button{
-    margin: 10px;
-    padding: 10px;
-    border: 0;
-    color: #6c6c6c;
-    border-radius: 5px;
-}
-
-#homePage #doodle{
-    width: 272px;
+#homePage #wrap #buttons button {
+  margin: 10px;
+  padding: 10px;
+  border: 0;
+  color: #6c6c6c;
+  border-radius: 5px;
 }
 
-#homePage #searchBox{
-    display: flex;
-    align-items: center;
+#homePage #doodle {
+  width: 272px;
 }
 
-#homePage #searchBox #search{
-    width: 580px;
-    height: 44px;
-    border-radius: 50px;
-    border: 1px solid darkgrey;
+#homePage #searchBox {
+  display: flex;
+  align-items: center;
 }
 
-#homePage #searchIcon{
-    width: 100px;
-    width: 20px;
-
-    position: relative;
-    left: 35px;
+#homePage #searchBox #search {
+  width: 580px;
+  height: 44px;
+  border-radius: 50px;
+  border: 1px solid darkgrey;
 }
 
+#homePage #searchIcon {
+  width: 100px;
+  width: 20px;
 
-#homePage #micIcon{
-    width: 100px;
-    width: 20px;
+  position: relative;
+  left: 35px;
+}
 
-    position: relative;
-    left: -35px;
+#homePage #micIcon {
+  width: 100px;
+  width: 20px;
+
+  position: relative;
+  left: -35px;
 }
 
 /* Responsiveness  -------------------  */
 
-@media only screen and (max-width:767px){
-    #homePage #searchBox #search{
-        width: 200px;
-        height: 34px;
-    }
+@media only screen and (max-width: 767px) {
+  #homePage #searchBox #search {
+    width: 200px;
+    height: 34px;
+  }
 
-    #homePage #doodle {
-        width: 151px;
-    }
+  #homePage #doodle {
+    width: 151px;
+  }
+}
+
+/* Result Page ------------------------------ */
+#resultPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh !important;
+}
+#resultPage #topRow {
+  display: flex;
+  padding: 33px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+#resultPage #topRow #doodle {
+  width: 92px;
+  margin-right: 25px;
+}
+#resultPage #topRow #searchBox {
+  display: flex;
+  align-items: center;
+}
+#resultPage #topRow #search {
+  width: 380px;
+  height: 34px;
+  border-radius: 50px;
+  border: 1px solid darkgrey;
+}
+#resultPage #topRow #searchIcon {
+  width: 30px;
+  position: relative;
+  left: -41px;
+}
+
+#resultPage #categoriesRow {
+  border-bottom: 1px solid #dddddd;
+}
+
+#resultPage #categoriesRow ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 153px;
+  margin-bottom: 0;
+}
+#resultPage #categoriesRow ul li {
+  margin-right: 30px;
+  color: #6c6c6c;
+  padding: 10px;
+}
+
+#resultPage #categoriesRow ul li.selected {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+#resultRow{
+    flex-grow: 1;
+}
+
+#paginationRow {
+  display: flex;
+  justify-content: center;
+}
+#paginationWrap {
+  display: flex;
+}
+#paginationWrap img {
+  height: 100px;
+}
+#paginationWrap h3 {
+  text-align: center;
+  margin-top: 0;
 }
